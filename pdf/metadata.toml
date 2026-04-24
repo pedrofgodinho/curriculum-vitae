@@ -1,0 +1,37 @@
+#:schema https://raw.githubusercontent.com/yunanwg/brilliant-CV/main/metadata.toml.schema.json
+
+language = "en"
+
+[layout]
+    awesome_color = "skyblue"
+    before_section_skip = "1pt"
+    before_entry_skip = "1pt"
+    before_entry_description_skip = "1pt"
+    paper_size = "a4"
+    # date_width = "3.6cm"
+    # font_size = "10pt"
+
+    [layout.fonts]
+        regular_fonts = ["Source Sans 3"]   # download from Google Fonts → pdf/fonts/
+        header_font = "Roboto"              # download from Google Fonts → pdf/fonts/
+
+    [layout.header]
+        header_align = "left"
+        display_profile_photo = false       # set to true once assets/avatar.png is your photo
+        profile_photo_radius = "50%"
+        info_font_size = "10pt"
+
+    [layout.entry]
+        display_entry_society_first = true  # required for cv-entry-start / cv-entry-continued
+        display_logo = false                # set to true once you add logo images to assets/logos/
+
+    [layout.footer]
+        display_page_counter = false
+        display_footer = true
+
+[inject]
+    injected_keywords_list = []
+
+[lang.en]
+    cv_footer = "Curriculum Vitae"
+    letter_footer = "Cover Letter"

@@ -1,0 +1,4 @@
+pdf/cv.pdf
+pdf/fonts/*.ttf
+pdf/fonts/*.otf
+dist/

@@ -1,0 +1,28 @@
+name: Release PDF
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build PDF via Docker Compose
+        run: |
+          mkdir -p dist
+          docker compose run --rm pdf
+
+      - name: Upload to rolling release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: "Latest CV"
+          body: "Auto-generated from commit ${{ github.sha }} on ${{ github.event.head_commit.timestamp }}"
+          files: dist/cv.pdf
+          make_latest: "true"
+          overwrite: true
