@@ -16,6 +16,7 @@ export interface Meta {
 		scholar?: string
 		orcid?: string
 		x?: string
+		repo?: string
 	}
 	sections: Section[]
 }
