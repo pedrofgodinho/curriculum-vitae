@@ -6,11 +6,14 @@ items:
   - c1: "Programming"
     c2: "Rust, Python, JavaScript (TypeScript), C#, Java, C, Go"
 
+  - c1: "AI/ML"
+    c2: "PyTorch, TensorFlow, Hugging Face Transformers, OpenAI API, LangChain, LangGraph"
+
   - c1: "Backend"
-    c2: "Node.js, Flask"
+    c2: "Node.js, Flask, Axum"
 
   - c1: "Frontend"
-    c2: "Svelte, SvelteKit, React"
+    c2: "Svelte, SvelteKit, Vue"
 
   - c1: "Game Development"
     c2: "Unity, Unreal Engine, Godot"
