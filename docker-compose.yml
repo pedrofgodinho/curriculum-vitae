@@ -1,9 +1,0 @@
-services:
-  pdf:
-    image: ghcr.io/typst/typst:latest
-    volumes:
-      - ./:/work
-      - ./dist:/out
-      - ./pdf/fonts:/extra-fonts:ro
-    working_dir: /work
-    command: compile --root /work --font-path /extra-fonts pdf/cv.typ /out/cv.pdf

@@ -22,13 +22,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build PDF via Docker Compose
-        run: |
-          mkdir -p dist
-          docker compose run --rm pdf
+      - uses: typst-community/setup-typst@v4
 
-      - name: Stage PDF for static site
-        run: cp dist/cv.pdf web/static/cv.pdf
+      - name: Build PDF
+        run: typst compile --root . --font-path pdf/fonts pdf/cv.typ web/static/cv.pdf
 
       - uses: actions/setup-node@v4
         with:

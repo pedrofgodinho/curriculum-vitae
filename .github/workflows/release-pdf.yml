@@ -12,10 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build PDF via Docker Compose
+      - uses: typst-community/setup-typst@v4
+
+      - name: Build PDF
         run: |
           mkdir -p dist
-          docker compose run --rm pdf
+          typst compile --root . --font-path pdf/fonts pdf/cv.typ dist/cv.pdf
 
       - name: Upload to rolling release
         uses: softprops/action-gh-release@v2
