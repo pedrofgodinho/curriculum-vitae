@@ -37,7 +37,7 @@ npm run build      # production build → web/build/
 npm run preview    # preview the production build
 ```
 
-`npm run build` automatically compiles the PDF first and bundles it into the site as `/cv.pdf`, so the download link on the site always matches the live content.
+Both `npm run dev` and `npm run build` run a prebuild step first that compiles the PDF into `web/static/cv.pdf` and copies the profile photo (if set) from `content/` to `web/static/`. In CI the Typst compilation is skipped because GitHub Actions runs it in a separate dedicated step.
 
 ---
 
@@ -50,6 +50,10 @@ Everything you edit lives in `content/`. The section order in both outputs is co
 ```yaml
 name: "Your Name"
 title: "Your Current Title"
+photo:                            # optional — profile photo
+  file: "photo.jpg"              # filename inside content/
+  web: true                      # show on the website (default: true)
+  pdf: false                     # show in the PDF (default: false)
 affiliation:
   department: "Your Institution"
   institution: "Your Department"
@@ -228,12 +232,6 @@ CI builds and deploys the site to GitHub Pages on every push to `main`. The PDF 
 
 To enable GitHub Pages: go to **Settings → Pages → Source** and select **GitHub Actions**.
 
-For a custom domain, add your domain to `web/static/CNAME`:
-
-```
-cv.yourdomain.com
-```
-
 ---
 
 ## Project layout
@@ -248,6 +246,7 @@ web/              SvelteKit website
   src/
     lib/          Shared utilities and components
     routes/       Pages
+  scripts/        Build scripts (prebuild: PDF compile + photo copy)
   static/         Static assets (CNAME goes here)
 .github/
   workflows/

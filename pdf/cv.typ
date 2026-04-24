@@ -81,15 +81,27 @@
     .join(" · ")
 )
 
+#let photo-config = meta.at("photo", default: none)
+#let show-photo-pdf = (
+  photo-config != none
+  and photo-config.at("pdf", default: false) == true
+  and photo-config.at("file", default: none) != none
+)
+
 #let metadata = (
   ..metadata,
   personal: personal,
   lang: (..metadata.lang, en: (..metadata.lang.en, header_quote: header-quote)),
+  layout: (..metadata.layout, header: (..metadata.layout.header, display_profile_photo: show-photo-pdf)),
 )
 
 #show: cv.with(
   metadata,
-  profile-photo: image("assets/avatar.png"),
+  profile-photo: if show-photo-pdf {
+    image("/content/" + photo-config.at("file"))
+  } else {
+    image("assets/avatar.png")
+  },
   // To use custom image icons in personal.info.custom-N entries,
   // pass them here (keys must match the custom-N keys in metadata.toml):
   // custom-icons: (

@@ -5,7 +5,8 @@
 </script>
 
 <header class="bg-gradient-to-b from-slate-900 to-slate-950 border-b border-slate-800">
-	<div class="max-w-4xl mx-auto px-6 py-14">
+	<div class="max-w-4xl mx-auto px-6 py-14 flex items-start gap-8">
+		<div class="flex-1 min-w-0">
 		<h1 class="text-5xl font-bold text-white tracking-tight">{meta.name}</h1>
 		<p class="text-sky-400 text-xl mt-2 font-medium">{meta.title}</p>
 		{#if meta.affiliation?.department || meta.affiliation?.institution}
@@ -168,6 +169,15 @@
 					PDF
 				</a>
 			</div>
+		{/if}
+		</div>
+
+		{#if meta.photo?.web !== false && meta.photo?.file}
+			<img
+				src="/{meta.photo.file}"
+				alt={meta.name}
+				class="size-36 rounded-full object-cover shrink-0 ring-2 ring-slate-700 mt-1"
+			/>
 		{/if}
 	</div>
 </header>

@@ -1,5 +1,10 @@
 export interface Meta {
 	name: string
+	photo?: {
+		file: string
+		web?: boolean
+		pdf?: boolean
+	}
 	title: string
 	affiliation?: {
 		department?: string

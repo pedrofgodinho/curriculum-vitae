@@ -31,7 +31,7 @@
   let raw = yaml("../content/" + module + ".yaml")
   let items = if type(raw) == array { raw } else { raw.items }
   let bold = if type(raw) == array { "c2" } else { raw.at("bold", default: "c2") }
-  cv-section(heading)
+  cv-section(heading, letters: heading.len())
   for item in items {
     let d = item.at("details", default: none)
     let col1 = render-md(item.c1)
@@ -49,14 +49,14 @@
 #let render-text-section(module, heading) = {
   let raw = yaml("../content/" + module + ".yaml")
   let paras = if type(raw) == array { raw } else { (raw,) }
-  cv-section(heading)
+  cv-section(heading, letters: heading.len())
   paras.map(render-md).join(parbreak())
 }
 
 #let render-list-section(module, heading) = {
   let raw = yaml("../content/" + module + ".yaml")
   let items = if type(raw) == array { raw } else { raw.items }
-  cv-section(heading)
+  cv-section(heading, letters: heading.len())
   list(..items.map(render-md))
 }
 
@@ -69,7 +69,7 @@
 
 #let render-entry-section(module, heading) = {
   let data = yaml("../content/" + module + ".yaml")
-  cv-section(heading)
+  cv-section(heading, letters: heading.len())
   for item in data {
     if "entries" in item {
       if item.entries.len() == 1 {

@@ -1,4 +1,8 @@
 name: "Pedro Godinho"
+photo:
+  file: "photo.jpg"   # filename in content/
+  web: true           # show on website
+  pdf: false          # show in PDF
 title: "B.Sc. in Telecommunications and Informatics Engineering"
 affiliation:
   department: "Instituto Superior Técnico"
