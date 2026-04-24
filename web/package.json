@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"prebuild": "typst compile --root .. --font-path ../pdf/fonts ../pdf/cv.typ static/cv.pdf",
+		"prebuild": "node -e \"if(!process.env.CI){require('child_process').execSync('typst compile --root .. --font-path ../pdf/fonts ../pdf/cv.typ static/cv.pdf',{stdio:'inherit'})}else{console.log('CI detected — skipping PDF build, PDF already staged')}\"",
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
