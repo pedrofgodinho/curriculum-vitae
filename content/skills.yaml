@@ -1,0 +1,22 @@
+bold: c1
+items:
+  - c1: "DevOps"
+    c2: "Docker, Ansible, GitHub Actions"
+
+  - c1: "Programming"
+    c2: "Rust, Python, JavaScript (TypeScript), C#, Java, C, Go"
+
+  - c1: "Backend"
+    c2: "Node.js, Flask"
+
+  - c1: "Frontend"
+    c2: "Svelte, SvelteKit, React"
+
+  - c1: "Game Development"
+    c2: "Unity, Unreal Engine, Godot"
+
+  - c1: "Cybersecurity"
+    c2: "Ghidra, Binary Ninja, pwntools, OWASP ZAP, GDB, Wireshark"
+
+  - c1: "General"
+    c2: "Git, Linux, Shell Scripting, SQL, Networking, Proxmox, Microsoft Office, DaVinci Resolve, LaTeX, Typst"

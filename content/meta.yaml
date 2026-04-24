@@ -1,0 +1,40 @@
+name: "Pedro Godinho"
+title: "B.Sc. in Telecommunications and Informatics Engineering"
+affiliation:
+  department: "Instituto Superior Técnico"
+  institution: "Department of Electrical and Computer Engineering"
+  # address: "Building 123, Room 456, Cambrew, MA"
+contact:
+  email: "pedro.fernandez.godinho@gmail.com"
+  # website: "https://me.pmfg.pt"
+links:
+  linkedin: "pedro-fernandez-godinho"
+  github: "pedrofgodinho"
+  # scholar: "your-scholar-id"
+  # orcid: "0000-0000-0000-0000"
+  # x: "your-x-username"
+sections:
+  - module: summary
+    title: "Summary"
+    type: text
+  - module: education
+    title: "Education"
+    type: entry
+  - module: research
+    title: "Research & Projects"
+    type: entry
+  - module: experience
+    title: "Experience"
+    type: entry
+  - module: awards
+    title: "Awards and Honors"
+    type: columns
+  - module: skills
+    title: "Skills"
+    type: columns
+  - module: hobbies
+    title: "Hobbies and Interests"
+    type: list
+  - module: languages
+    title: "Languages"
+    type: columns

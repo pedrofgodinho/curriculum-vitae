@@ -1,0 +1,50 @@
+- org: "Instituto Superior Técnico"
+  location: "Oeiras, Portugal"
+  entries:
+    - title: "Monitor in the Department of Electrical and Computer Engineering"
+      date: "2025-Present"
+      details:
+        - "Maintained hardware for the department's 5 computer lab rooms, including troubleshooting and repairs for desktops and networking equipment"
+        - "Provided technical support for students and faculty, including assistance with software installation and network configuration"
+        - "Managed and updated the department's website and provided technical support for online resources"
+        - "Managed a server for hosting course resources and applications (e.g. GNS3, Wireshark)"
+        - "Maintained and updated a mesh network for the department labs and mobile networking course"
+- org: "Mobile Educational Game for FeedInov"
+  location: "Oeiras, Portugal"
+  entries:
+    - title: "Systems Programmer via GameDev Técnico"
+      date: "2023"
+      details:
+        - "Served as systems programmer on a 1-year contract project for FeedInov, a non-profit zootechnical foundation, building a published mobile educational game teaching children about sustainable farming practices"
+        - "Architected and implemented core game systems: isometric grid-based farm simulation, time and progression systems, save/load system, sound management, input system, and overall game state management"
+        - "Shipped to the [Google Play Store](https://play.google.com/store/apps/details?id=com.GameDevTecnico.QuintaDoVale)"
+        - "**Used Technologies**: Unity, C#, Git, Notion"
+- org: "GameDev Técnico - IST's Game Development Student Association"
+  location: "Oeiras, Portugal"
+  entries:
+    - title: "Member of the Operations Team"
+      date: "2021-2025"
+      details:
+        - "Managed the association's Minecraft server, including hosting, configuration, automated snapshots, and remote backups via BTRFS"
+        - "Participated in dozens of game jams, such as Global Game Jam, Ludum Dare, and Nordic Game Jam, often as a Gameplay Programmer"
+        - "**Used Technologies**: Unity, Unreal Engine, C#, C++, Git"
+- org: "Security Team @Técnico - IST's Cybersecurity Student Association"
+  location: "Oeiras, Portugal"
+  date: "2019-2021"
+  entries:
+    - title: "Member of the Security Team"
+      date: "2019-2021"
+      details:
+        - "Participated in multiple Capture the Flag (CTF) competitions, including the finals for VolgaCTF 2020"
+        - "Specialized in reverse engineering and binary exploitation, but also contributed to web security and cryptography challenges"
+        - "**Used Technologies**: Ghidra, Binary Ninja, C, SQL, Python, pwntools, ZAProxy, Grafana, Kibana"
+- org: "Student Mentor at Instituto Superior Técnico"
+  location: "Oeiras, Portugal"
+  date: "2020-2021"
+  entries:
+    - title: "Student Mentor for First-Year Telecommunications and Informatics Engineering Students"
+      date: "2019-2020"
+      details:
+        - "Provided guidance to first-year students on academic and social aspects of university life, including course selection, study strategies, and extracurricular involvement"
+        - "Helped organize orientation sessions and social events for new students to foster community and engagement"
+        - "Offered tutoring and support for students struggling with coursework, particularly in programming and networking subjects"

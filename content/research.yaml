@@ -1,0 +1,9 @@
+- org: "SagaPT: Specialized-Agent Graph Architecture for Penetration Testing"
+  location: "Oeiras, Portugal"
+  entries:
+    - title: "Master's Thesis Research Project"
+      date: "2025-Present"
+      details:
+        - Designing and implementing a multi-agent LLM system for automated penetration testing, using a state machine to orchestrate specialized agents across recon, exploitation, and reporting tasks.
+        - Implementing a summarization agent that condenses findings into a curated knowledge base to inform future agent decision-making
+        - Built with Python and LangGraph, utilizing Cloudflare's AI Gateway for LLM routing, to enable benchmarking of different LLMs and configurations

@@ -1,0 +1,25 @@
+- org: "Instituto Superior Técnico"
+  location: "Lisbon, Portugal"
+  entries:
+    - title: "M.Sc. in Computer Science, Expected October 2026"
+      details:
+        - "Expected graduation date: October 2026"
+        - "Specializing in Internet Security"
+        - "_Thesis:_ SagaPT: Specialized-Agent Graph Architecture for Penetration Testing - A framework that orchestrates multiple specialized agents to perform penetration testing tasks, leveraging a state machine to manage the flow of information between agents"
+        - "_Advisors:_ Prof. Rui Valadas and Prof. Tiago Domingues"
+    - title: "B.Sc. in Telecommunications and Informatics Engineering, October 2025"
+- org: "Salesianos de Manique"
+  location: "Manique, Cascais"
+  entries:
+    - title: "High School Diploma, June 2018"
+      details:
+        - "Science and Technology track"
+
+
+
+- org: "Trinity College London"
+  location: "Manique, Cascais"
+  entries:
+    - title: "Grade 8 in Piano, June 2016"
+      details:
+        - "Studied classical piano and music theory"
