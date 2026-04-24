@@ -22,18 +22,18 @@ sections:
   - module: summary
     title: "Summary"
     type: text
-  - module: education
-    title: "Education"
+  - module: experience
+    title: "Experience"
     type: entry
   - module: research
     title: "Research & Projects"
     type: entry
-  - module: experience
-    title: "Experience"
-    type: entry
   - module: awards
     title: "Awards and Honors"
     type: columns
+  - module: education
+    title: "Education"
+    type: entry
   - module: skills
     title: "Skills"
     type: columns
