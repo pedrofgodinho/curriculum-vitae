@@ -5,8 +5,8 @@
 </script>
 
 <header class="bg-gradient-to-b from-slate-900 to-slate-950 border-b border-slate-800">
-	<div class="max-w-4xl mx-auto px-6 py-14 flex items-start gap-8">
-		<div class="flex-1 min-w-0">
+	<div class="max-w-4xl mx-auto px-6 py-14 flex flex-col-reverse items-center sm:flex-row sm:items-start gap-8">
+		<div class="flex-1 min-w-0 w-full sm:w-auto text-center sm:text-left">
 		<h1 class="text-5xl font-bold text-white tracking-tight">{meta.name}</h1>
 		<p class="text-sky-400 text-xl mt-2 font-medium">{meta.title}</p>
 		{#if meta.affiliation?.department || meta.affiliation?.institution}
@@ -15,7 +15,7 @@
 			</p>
 		{/if}
 
-		<div class="flex flex-wrap gap-x-6 gap-y-2 mt-6">
+		<div class="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-2 mt-6">
 			{#if meta.contact?.email}
 				<a
 					href="mailto:{meta.contact.email}"
@@ -120,7 +120,7 @@
 		</div>
 
 		{#if meta.links?.repo}
-			<div class="flex gap-6 mt-3">
+			<div class="flex justify-center sm:justify-start gap-6 mt-3">
 				<a
 					href="https://github.com/{meta.links.repo}"
 					target="_blank"
